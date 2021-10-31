@@ -30,7 +30,97 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
-            <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
+            <div class="form-inner">
+              <div class="form-content-box form-name">
+                <div class="form-name-select">
+                  <h2 class="form-content-title">名字<span class="form-title__emphasis">※</span></h2>
+                  <input id="lastName" class="form-input form-input--focus form-name-select__input" type="text" name="lastName" required>
+                </div>
+                <div class="form-name-select">
+                  <h2 class="form-content-title">名前<span class="form-title__emphasis">※</span></h2>
+                  <input id="firstName" class="form-input form-input--focus form-name-select__input" type="text" name="firstName" required>
+                </div>
+              </div>
+  
+              <div class="form-content-box form-gender">
+                <h2 class="form-content-title">性別</h2>
+                <div class="form-gender-select">
+                  <div class="form-gender-option">
+                    <input id="male" class="form-radio form-gender-option__input" type="radio" name="gender" value="男性">
+                    <label class="form-gender-option__label" for="male">男性</label>
+                  </div>
+                  <div class="form-gender-option">
+                    <input id="female" class="form-radio form-gender-option__input" type="radio" name="gender" value="女性">
+                    <label class="form-gender-option__label" for="female">女性</label>
+                  </div>
+                  <div class="form-gender-option">
+                    <input id="gender-unknown" class="form-radio form-gender-option__input" type="radio" name="gender" value="その他">
+                    <label class="form-gender-option__label" for="gender-unknown">その他</label>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-content-box form-from">
+                <h2 class="form-content-title">出身</h2>
+                <select id="from" class="form-from-select" name="from">
+                  <option class="form-from-select__option" value="東京">東京</option>
+                  <option class="form-from-select__option" value="千葉">千葉</option>
+                  <option class="form-from-select__option" value="埼玉">埼玉</option>
+                  <option class="form-from-select__option" value="神奈川">神奈川</option>
+                </select>
+              </div>
+              
+              <div class="form-content-box form-email">
+                <h2 class="form-content-title">Eメール<span class="form-title__emphasis">※</span></h2>
+                <input id="email" class="form-input form-input--focus form-email__input" type="email" name="email" placeholder="ex)hoge@example.com" required>
+              </div>
+              
+              <div class="form-content-box form-tel">
+                <h2 class="form-content-title">電話番号</h2>
+                <input id="tel" class="form-input form-input--focus form-tel__input" type="tel" name="tel" placeholder="ex)09012345678">
+              </div>
+
+              <div class="form-content-box form-password">
+                <h2 class="form-content-title">パスワード<span class="form-title__emphasis">※</span></h2>
+                <input id="password" class="form-input form-input--focus form-password__input" type="password" name="password" required>
+              </div>
+              
+              <div class="form-content-box form-re-password">
+                <h2 class="form-content-title">パスワード(確認用)<span class="form-title__emphasis">※</span></h2>
+                <input id="re-password" class="form-input form-input--focus form-re-password__input" type="password" name="re-password" required>
+              </div>
+
+              <div class="form-content-box form-course">
+                <h2 class="form-content-title">希望コース</h2>
+                <div class="form-course-select">
+                  <div class="form-course-option">
+                    <input id="front-end" class="form-checkbox form-course-option__input" type="checkbox" name="course" value="フロントエンド">
+                    <label class="form-course-option__label" for="front-end">フロントエンド</label>
+                  </div>
+                  <div class="form-course-option">
+                    <input id="back-end" class="form-checkbox form-course-option__input" type="checkbox" name="course" value="バックエンド">
+                    <label class="form-course-option__label" for="back-end">バックエンド</label>
+                  </div>
+                  <div class="form-course-option">
+                    <input id="application" class="form-checkbox form-course-option__input" type="checkbox" name="course" value="アプリ">
+                    <label class="form-course-option__label" for="application">アプリ</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-content-box form-remarks">
+                <h2 class="form-content-title">備考</h2>
+                <textarea id="remarks" class="form-input form-input--focus form-remarks__textarea" name="remarks" placeholder="何かあればご記入ください"></textarea>
+              </div>
+
+              <div class="form-content-box form-button">
+                <div class="form-button-inner">
+                  <input id="create-button" class="form-input form-button__input"  type="submit" value="アカウント作成">
+                </div>
+              </div>
+  
+              <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
+            </div>
           </form>
         </div>
         <div class="foot-part">
